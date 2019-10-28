@@ -161,15 +161,6 @@ body {
 /*------GAME UI*/
 
 
-/*---BUTTONS*/
-
-/*-START*/
-
-/*-SETTINGS*/
-
-/*-MENU*/
-
-/*-TRY AGAIN*/
 
 /*-IN-GAME SETTINGS*/
 
@@ -219,7 +210,103 @@ body {
     right: 3.5vw;
 
 }
+
+/*--ENERGY BOARD*/
+
+#life_bar_1{
+    background-image: url(assets_life_bar_1.svg);/*--size 600x100*/
+    width: 25vw;
+    height: 4.17vw;
+    background-size: 100%;
+
+    position: absolute;
+    top: 2vw;
+    left: 45vw;
+
+
+}
+
+#life_bar_2{
+    background-image: url(assets_life_bar_2.svg);/*--size 410x98*/
+    width: 17.45vw;
+    height: 4.17vw;
+    background-size: 100%;
+
+    position: absolute;
+    top: 2vw;
+    left: 45vw;
+
+    display: none;
+}
+
+#life_bar_3{
+    background-image: url(assets_life_bar_3.svg);/*--size 200x100*/
+    width: 8.34vw;
+    height: 4.17vw;
+    background-size: 100%;
+
+    position: absolute;
+    top: 2vw;
+    left: 45vw;
+
+    display: none;
+}
+
+
+#alice_health_1{
+
+    background-image: url(assets_health_1.svg);/*--size 230x230*/
+    width: 7vw;
+    height: 7vw;
+    background-size: 100%;
+
+    position: absolute;
+    top: 0.4vw;
+    left: 42vw;
+}
+
+#alice_health_2{
+
+    background-image: url(assets_health_2.svg);/*--size 230x230*/
+    width: 7vw;
+    height: 7vw;
+    background-size: 100%;
+
+    position: absolute;
+    top: 0.4vw;
+    left: 42vw;
+
+    display: none;
+}
+
+#alice_health_3{
+
+    background-image: url(assets_health_3.svg);/*--size 230x230*/
+    width: 7vw;
+    height: 7vw;
+    background-size: 100%;
+
+    position: absolute;
+    top: 0.4vw;
+    left: 42vw;
+
+    display: none;
+}
+
+
+
+
 /*------UI ELEMENTER*/
+
+/*---BUTTONS*/
+
+/*-START*/
+
+/*-SETTINGS*/
+
+/*-MENU*/
+
+/*-TRY AGAIN*/
 
 
 
