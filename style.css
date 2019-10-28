@@ -155,11 +155,36 @@ body {
     position: absolute;
     bottom: 0vw;
     right: 65vw;
-    background-size: 100%;
     overflow: hidden;
 }
 
 /*------GAME UI*/
+
+/*------UI ELEMENTER*/
+
+
+/*---BUTTONS*/
+
+/*-START*/
+
+/*-SETTINGS*/
+
+/*-MENU*/
+
+/*-TRY AGAIN*/
+
+/*-IN-GAME SETTINGS*/
+
+#in_game_settings_button{
+    background-image: url(assets_settings_2.svg);/*--size 170x170*/
+    width: 7vw;
+    height: 7vw;
+    background-size: 100%;
+
+    position: absolute;
+    bottom: 2vw;
+    left: 2vw;
+}
 
 /*------UI ELEMENTER*/
 
