@@ -354,11 +354,41 @@ body {
 
 /*-MENU*/
 
+#menu_button{
+    background-image: url(assets_menu_button.svg); /*--size 190x80*/
+    width: 10vw;
+    height: 4.21vw;
+    background-size: 100%;
+    position: absolute;
+
+
+}
+
 /*-TRY AGAIN*/
+
+#try_again_button{
+
+    background-image: url(assets_try_again_button.svg); /*--size 180x80*/
+    width: 10vw;
+    height: 4.44vw;
+    background-size: 100%;
+    position: absolute;
+
+    bottom: 27vw;
+    left: 55vw;
+
+    transform: rotate(15deg);
+
+
+}
 
 
 
 /*START----------------------------------------------------*/
+
+#start{
+    display: none;
+}
 
 #startscreen {
 
@@ -368,7 +398,7 @@ body {
     height: 100%;
     position: absolute;
 
-     display: none;
+
 
 }
 
@@ -384,7 +414,7 @@ body {
 
     overflow: hidden;
 
-     display: none;
+
 }
 
 #doggo_start{
@@ -400,11 +430,13 @@ body {
 
     overflow: hidden;
 
-     display: none;
+
 }
 
 
 /*GAME OVER------------------------------------------------*/
+
+#game_over{}
 
 #game_over_background{
     background-color: black;
@@ -457,6 +489,14 @@ body {
     left: 55vw;
 
     overflow: hidden;
+
+}
+
+#game_over #menu_button{
+    bottom: 31vw;
+    left: 40vw;
+
+     transform: rotate(15deg);
 
 }
 
