@@ -332,6 +332,8 @@ body {
     left:40vw;
     z-index: 1;
 
+     display: none;
+
 }
 
 /*-SETTINGS*/
@@ -346,6 +348,8 @@ body {
     top:40vw;
     left:40vw;
     z-index: 1;
+
+     display: none;
 }
 
 /*-MENU*/
@@ -364,6 +368,8 @@ body {
     height: 100%;
     position: absolute;
 
+     display: none;
+
 }
 
 #alice_start{
@@ -377,6 +383,8 @@ body {
     right: 70vw;
 
     overflow: hidden;
+
+     display: none;
 }
 
 #doggo_start{
@@ -391,22 +399,68 @@ body {
     left:  65vw;
 
     overflow: hidden;
+
+     display: none;
 }
 
 
 /*GAME OVER------------------------------------------------*/
 
-#game_over {
+#game_over_background{
+    background-color: black;
+    opacity: 70%;
 
-    background-image: url(assets_bad_end.svg);
     background-size: cover;
     width: 100%;
     height: 100%;
     position: absolute;
-    display: none;
+}
 
+#bad_sign{
+
+    background-image: url(assets_bad_end.svg); /*--size 960x860*/
+    background-size: 100%;
+    width: 70vw;
+    height: 62.71vw;
+    position: absolute;
+
+    top: 0vw;
+    left: 20vw;
+
+    overflow: hidden;
 
 }
+
+#hospital{
+    background-image: url(assets_bad_end_hospital.svg); /*--size 260x210*/
+    background-size: 100%;
+    width: 35vw;
+    height: 28.26vw;
+    position: absolute;
+
+    bottom: -3vw;
+    left: 33vw;
+
+    overflow: hidden;
+
+}
+
+#bad_alice{
+
+    background-image: url(assets_bad_end_alice.svg); /*--size 220x240*/
+    background-size: 100%;
+    width: 10vw;
+    height: 10.91vw;
+    position: absolute;
+
+    bottom: 15vw;
+    left: 55vw;
+
+    overflow: hidden;
+
+}
+
+
 
 /*LEVEL COMPLETE-------------------------------------------*/
 
