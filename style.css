@@ -320,8 +320,33 @@ body {
 /*---BUTTONS*/
 
 /*-START*/
+#start_button{
+
+    background-image: url(assets_start_button.svg); /*--size 370x160*/
+    width: 20vw;
+    height: 8.65vw;
+    background-size: 100%;
+
+    position: absolute;
+    top: 30vw;
+    left:40vw;
+    z-index: 1;
+
+}
 
 /*-SETTINGS*/
+
+#settings_button{
+   background-image: url(assets_settings_button.svg); /*--size 370x160*/
+    width: 20vw;
+    height: 8.65vw;
+    background-size: 100%;
+
+    position: absolute;
+    top:40vw;
+    left:40vw;
+    z-index: 1;
+}
 
 /*-MENU*/
 
