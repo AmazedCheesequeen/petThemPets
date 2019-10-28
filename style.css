@@ -160,8 +160,6 @@ body {
 
 /*------GAME UI*/
 
-/*------UI ELEMENTER*/
-
 
 /*---BUTTONS*/
 
@@ -186,7 +184,44 @@ body {
     left: 2vw;
 }
 
+/*--SCORE BOARD*/
+
+#doggo_count{
+
+    background-image: url(assets_doggo_count.svg);/*--size 290x270*/
+    width: 7vw;
+    height: 6.5vw;
+    background-size: 100%;
+
+    position: absolute;
+    top: 2vw;
+    right: 10vw;
+
+}
+
+#heart{
+    background-image: url(assets_heart.svg);/*--size 50x50*/
+    width: 2vw;
+    height: 2vw;
+    background-size: 100%;
+
+    position: absolute;
+    top: 1vw;
+    right: 10vw;
+}
+
+#count_number{
+    color: #c69c6d;
+    font-size: 4.5rem;
+    font-family: active;
+    position: absolute;
+    top: 3vw;
+    right: 3.5vw;
+
+}
 /*------UI ELEMENTER*/
+
+
 
 /*START----------------------------------------------------*/
 
