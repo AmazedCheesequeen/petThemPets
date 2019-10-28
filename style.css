@@ -93,6 +93,26 @@ body {
 
 /*-BONUSBOI*/
 
+#bonusboi_container{
+    position: absolute;
+    bottom: -2vw;
+    right: 35vw;
+
+    overflow: hidden;
+     z-index: 1;
+
+    display: none;
+}
+
+#bonusboi_sprite{
+    background-image: url(assets_bonus_dog.svg);/*--size 1110x939*/
+    width: 40vw;
+    height: 33.84vw;
+    background-size: 100%;
+
+
+}
+
 /*------CATTOS*/
 
 /*-CHUNKBOI 1*/
