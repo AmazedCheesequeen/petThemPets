@@ -1,0 +1,191 @@
+html {
+    font-size: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#screen {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+}
+
+/*GAME-----------------------------------------------------*/
+
+#game {
+
+    background-color: #6fd9e2;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/*------GAME BACKGROUND*/
+
+#game_background{
+    background-image: url(assets_background.svg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+
+/*------GAME ELEMENTS*/
+
+#game_elements {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/*------DOGGOS*/
+
+/*-GOLDENPUPPER*/
+
+#goldenpupper_container{
+    position: absolute;
+    bottom: 5vw;
+    right: 4vw;
+
+}
+
+#goldenpupper_sprite {
+    background-image: url(assets_dog_1.svg); /*--size 920x700*/
+    width: 25vw;
+    height: 19.02vw;
+    background-size: 100%;
+
+}
+
+/*-SAUSAGEPUP*/
+
+#sausagepup_container{
+    position: absolute;
+    bottom: 20vw;
+    left: 30vw;
+}
+
+#sausagepup_sprite{
+    background-image: url(assets_dog_2.svg);/*--size 659x270*/
+    width: 15vw;
+    height: 6.15vw;
+    background-size: 100%;
+}
+
+/*-CORGO*/
+
+#corgo_container{
+    position: absolute;
+    bottom: 15vw;
+    right: 30vw;
+}
+
+#corgo_sprite{
+    background-image: url(assets_dog_3.svg);/*--size 601x335*/
+    width: 10vw;
+    height: 5.57vw;
+    background-size: 100%;
+}
+
+/*-BONUSBOI*/
+
+/*------CATTOS*/
+
+/*-CHUNKBOI 1*/
+#chunkboi_1_container{
+    position: absolute;
+    bottom: 15vw;
+    right: 45vw;
+    background-size: 100%;
+}
+
+#chunkboi_1_sprite{
+    background-image: url(assets_cat_1.svg);/*--size 440x440*/
+    width: 10vw;
+    height: 10vw;
+    background-size: 100%;
+}
+
+/*-CHUNKBOI 2*/
+#chunkboi_2_container{
+    position: absolute;
+    bottom: 5vw;
+    left: 15vw;
+    background-size: 100%;
+}
+
+#chunkboi_2_sprite{
+     background-image: url(assets_cat_2.svg);/*--size 440x440*/
+    width: 8vw;
+    height: 8vw;
+    background-size: 100%;
+}
+
+/*-CHONKBOI*/
+
+#chonker_container{
+
+    position: absolute;
+    bottom: 10vw;
+    left: 4vw;
+    background-size: 100%;
+}
+
+#chonker_sprite{
+     background-image: url(assets_cat_3.svg);/*--size 720x380*/
+    width: 15vw;
+    height: 7.92vw;
+    background-size: 100%;
+}
+
+/*------FOREGROUND*/
+
+/*------GAME UI*/
+
+/*------UI ELEMENTER*/
+
+/*START----------------------------------------------------*/
+
+#start {
+
+    background-image: url(assets_start.svg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+
+
+}
+
+/*GAME OVER------------------------------------------------*/
+
+#game_over {
+
+    background-image: url(assets_bad_end.svg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+
+
+}
+
+/*LEVEL COMPLETE-------------------------------------------*/
+
+#level_complete {
+
+    background-image: url(assets_good_end.svg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+
+
+}
