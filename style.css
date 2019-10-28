@@ -185,19 +185,19 @@ body {
     background-size: 100%;
 
     position: absolute;
-    top: 2vw;
+    top: 1vw;
     right: 10vw;
 
 }
 
 #heart{
     background-image: url(assets_heart.svg);/*--size 50x50*/
-    width: 2vw;
-    height: 2vw;
+    width: 1.5vw;
+    height: 1.5vw;
     background-size: 100%;
 
     position: absolute;
-    top: 1vw;
+    top: 0.2vw;
     right: 10vw;
 }
 
@@ -206,7 +206,7 @@ body {
     font-size: 4.5rem;
     font-family: active;
     position: absolute;
-    top: 3vw;
+    top: 1vw;
     right: 3.5vw;
 
 }
@@ -331,17 +331,43 @@ body {
 
 /*START----------------------------------------------------*/
 
-#start {
+#startscreen {
 
     background-image: url(assets_start.svg);
     background-size: cover;
     width: 100%;
     height: 100%;
     position: absolute;
-    display: none;
-
 
 }
+
+#alice_start{
+    background-image: url(assets_alice.svg);/*--size 640x870*/
+    width: 35vw;
+    height: 47.58vw;
+    background-size: 100%;
+
+    position: absolute;
+    bottom: 0vw;
+    right: 70vw;
+
+    overflow: hidden;
+}
+
+#doggo_start{
+
+    background-image: url(assets_start_dog.svg);/*--size 880x930*/
+    width: 45vw;
+    height: 47.56vw;
+    background-size: 100%;
+
+    position: absolute;
+    bottom: 0vw;
+    left:  65vw;
+
+    overflow: hidden;
+}
+
 
 /*GAME OVER------------------------------------------------*/
 
