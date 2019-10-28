@@ -293,8 +293,27 @@ body {
     display: none;
 }
 
+/*--TIME BOARD*/
 
+#time_glass{
+    background-image: url(assets_time_glass.svg);/*--size 100x120*/
+    width: 5vw;
+    height: 6vw;
+    background-size: 100%;
 
+    position: absolute;
+    top: 1vw;
+    left: 5vw;
+}
+
+#time_count{
+    color: #c69c6d;
+    font-size: 4.5rem;
+    font-family: active;
+    position: absolute;
+    top: 1vw;
+    left: 12vw;
+}
 
 /*------UI ELEMENTER*/
 
