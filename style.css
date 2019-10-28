@@ -113,8 +113,8 @@ body {
 /*-CHUNKBOI 2*/
 #chunkboi_2_container{
     position: absolute;
-    bottom: 5vw;
-    left: 15vw;
+    bottom: 2vw;
+    left: 34vw;
     background-size: 100%;
 }
 
@@ -131,7 +131,7 @@ body {
 
     position: absolute;
     bottom: 10vw;
-    left: 4vw;
+    left: 13vw;
     background-size: 100%;
 }
 
@@ -140,9 +140,24 @@ body {
     width: 15vw;
     height: 7.92vw;
     background-size: 100%;
+
 }
 
 /*------FOREGROUND*/
+
+#foreground{
+    background-image: url(assets_tree.svg);/*--size 910x1360*/
+    width: 45vw;
+    height: 67.25vw;
+    background-size: 100%;
+
+
+    position: absolute;
+    bottom: 0vw;
+    right: 65vw;
+    background-size: 100%;
+    overflow: hidden;
+}
 
 /*------GAME UI*/
 
