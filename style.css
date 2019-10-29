@@ -340,7 +340,7 @@ body {
 /*---BUTTONS*/
 
 /*-START*/
-#start_button{
+#start_button1{
 
     background-image: url(assets_start_button.svg); /*--size 370x160*/
     width: 20vw;
@@ -353,6 +353,23 @@ body {
     z-index: 1;
 
      display: none;
+
+}
+
+#start_button2{
+
+    background-image: url(assets_start_button.svg); /*--size 370x160*/
+    width: 20vw;
+    height: 8.65vw;
+    background-size: 100%;
+
+    position: absolute;
+    top: 32vw;
+    left:45vw;
+    z-index: 1;
+
+    display: none;
+
 
 }
 
@@ -424,6 +441,59 @@ body {
 
     display: none;
 
+
+}
+
+/*-INTRODUCTION*/
+
+#introduction{
+
+    display: none;
+}
+
+#introduction_background{
+    background-color: black;
+    opacity: 70%;
+
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#sign{
+
+    background-image: url(assets_sign.svg); /*--size 280x260*/
+    width: 70vw;
+    height: 65vw;
+    background-size: 100%;
+    position: absolute;
+
+    top: 0vw;
+    left: 20vw;
+
+    overflow: hidden;
+}
+
+#text_container{
+    position: absolute;
+    bottom: 25vw;
+    left: 25vw;
+    background-size: 100%;
+
+    width: 50vw;
+    height: 20vw;
+}
+
+#text{
+
+    color: #c69c6d;
+    font-size: 1.4rem;
+    font-family: mv boli;
+    position: absolute;
+    top: 1vw;
+    left: 12vw;
+    text-align: center;
 
 }
 
