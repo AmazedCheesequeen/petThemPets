@@ -53,6 +53,7 @@ body {
 
 }
 
+
 #goldenpupper_sprite {
     background-image: url(assets_dog_1.svg); /*--size 920x700*/
     width: 25vw;
@@ -66,7 +67,9 @@ body {
 #sausagepup_container{
     position: absolute;
     bottom: 20vw;
-    left: 30vw;
+    right: 100vw;
+
+    transform: scaleX(-1);
 }
 
 #sausagepup_sprite{
@@ -256,7 +259,7 @@ body {
     top: 2vw;
     left: 45vw;
 
-    display: none;
+
 }
 
 #life_bar_3{
@@ -269,8 +272,9 @@ body {
     top: 2vw;
     left: 45vw;
 
-    display: none;
 }
+
+
 
 
 #alice_health_1{
@@ -283,6 +287,8 @@ body {
     position: absolute;
     top: 0.4vw;
     left: 42vw;
+
+
 }
 
 #alice_health_2{
@@ -297,6 +303,8 @@ body {
     left: 42vw;
 
     display: none;
+
+
 }
 
 #alice_health_3{
@@ -310,7 +318,7 @@ body {
     top: 0.4vw;
     left: 42vw;
 
-    display: none;
+   display: none;
 }
 
 /*--TIME BOARD*/
@@ -352,7 +360,7 @@ body {
     left:40vw;
     z-index: 1;
 
-     display: none;
+    display: none;
 
 }
 
@@ -448,7 +456,7 @@ body {
 
 #introduction{
 
-    display: none;
+    displ ay: none;
 }
 
 #introduction_background{
@@ -477,8 +485,8 @@ body {
 
 #text_container{
     position: absolute;
-    bottom: 25vw;
-    left: 25vw;
+    bottom: 32vw;
+    left: 5vw;
     background-size: 100%;
 
     width: 50vw;
@@ -502,7 +510,9 @@ body {
 /*START----------------------------------------------------*/
 
 #start{
+
     display: none;
+
 }
 
 #startscreen {
@@ -642,5 +652,316 @@ body {
     overflow: hidden;
 
 }
+
+
+/*ANIMATIONS-------------------------------------------*/
+.run1{
+
+    animation-name: run1_kf;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes run1_kf{
+
+    0%{
+
+        transform: translateX(75vw) scaleX(1);
+        overflow: hidden;
+
+    }
+
+
+
+
+    33%{
+        transform: translateX(-150vw) scaleX(1);
+        overflow: hidden;
+
+    }
+
+    66%{ transform: translateX(-150vw)scaleX(-1);}
+
+
+    100%{
+
+        transform: translateX(75vw) scaleX(-1);
+        overflow: hidden;
+
+    }
+}
+
+.run2{
+
+    animation-name: run2_kf;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes run2_kf{
+
+    0%{
+
+        transform: translateX(100vw) scaleX(1);
+        overflow: hidden;
+
+    }
+
+
+
+
+    33%{
+        transform: translateX(-130vw) scaleX(1);
+        overflow: hidden;
+
+    }
+
+    66%{ transform: translateX(-130vw)scaleX(-1);}
+
+
+    100%{
+
+        transform: translateX(100vw) scaleX(-1);
+        overflow: hidden;
+
+    }
+}
+
+
+.life_down{
+
+    animation-name: ld_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes ld_kf{
+
+    0%{opacity: 1;}
+    25%{opacity: 0;}
+    50%{opacity: 1;}
+    60%{opacity: 0;}
+    70%{opacity: 1;}
+    75%{opacity: 0;}
+    80%{opacity: 1;}
+    83%{opacity: 0;}
+    86%{opacity: 1;}
+    88%{opacity: 0;}
+    100%{opacity: 0;}
+
+}
+
+.life_up{
+
+    animation-name: lu_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes lu_kf{
+
+    0%{opacity: 0;}
+    25%{opacity: 1;}
+    50%{opacity: 0;}
+    60%{opacity: 1;}
+    70%{opacity: 0;}
+    75%{opacity: 1;}
+    80%{opacity: 0;}
+    83%{opacity: 1;}
+    86%{opacity: 0;}
+    88%{opacity: 1;}
+    100%{opacity: 1;}
+
+}
+
+.spin_out{
+
+    animation-name: spinout_kf;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes spinout_kf{
+
+    from{transform: rotate(0deg) scale(1);}
+    to{ transform: rotate(360deg) scale(0);}
+
+}
+
+.spin_in{
+
+    animation-name: spinin_kf;
+    animation-duration: 1,5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes spinin_kf{
+
+    from{transform: rotate(0deg) scale(0);}
+    to{ transform: rotate(-360deg) scale(1);}
+
+}
+
+.timer{
+    animation-name: timer_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes timer_kf{
+    from{transform: rotate(-60deg);}
+    to{transform: rotate(60deg);}
+}
+
+.spinner{
+     animation-name: spinner_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+
+}
+
+@keyframes spinner_kf{
+    from{transform: rotate(-30deg) scale(1);}
+    to{transform: rotate(60deg) scale(1.3);}
+}
+
+
+.be_gone_cat{
+     animation-name: bgc_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes bgc_kf{
+
+    from{
+        transform: rotate(0deg);
+        filter: blur(0);
+    }
+
+    to{
+
+        transform: rotate(360deg);
+        filter: blur(10vw);
+    }
+}
+
+.bye_doggo{
+
+    animation-name: bye_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+
+}
+
+@keyframes bye_kf{
+    from{transform: translateY(0vw) rotate(0deg) scale(1);}
+    to{transform: translateY(-70vw) rotate(360deg) scale(0);}
+
+}
+
+.start_jump{
+
+    animation-name: startjump_kf;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes startjump_kf{
+
+    from{transform: translateY(0vw);}
+    to{transform: translateY(-0.6vw)}
+}
+
+.pulse{
+    animation-name: pulse_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes pulse_kf{
+
+    from{transform: scale(1);}
+    to{transform: scale(1.05);}
+}
+
+.click_button{
+    animation-name: click_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both
+}
+
+@keyframes click_kf{
+
+    from{transform: scale(1) rotate(0deg)}
+    to{transform: scale(6) rotate(360deg);}
+
+}
+
+.fadeout{
+    animation-name: fadeout_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both
+}
+
+@keyframes fadeout_kf{
+    from{opacity: 1;}
+    to{opacity: 0}
+}
+
+.fadein{
+    animation-name: fadein_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both
+}
+
+@keyframes fadein_kf{
+    from{opacity: 0;}
+    to{opacity: 1}
+}
+
+
+.fall_in {
+    animation-name: fallin_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.3, 0.8,0.4, 1.4);
+    animation-fill-mode: both;
+}
+
+@keyframes fallin_kf{
+    from{transform: translateY(-100vw);}
+    to{transform: translateY(0vw);}
+}
+
+
 
 
