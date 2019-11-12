@@ -57,6 +57,7 @@ function startScreen (){
 
 function clickStart () {
 
+    startButton1.removeEventListener("click", clickStart);
     settingsButton.style.display = "none";
 
     document.querySelector("#alice_start").classList.remove("start_jump");
@@ -75,6 +76,8 @@ function clickStart () {
 }
 
 function intro () {
+
+    start.removeEventListener("animationend", intro);
 
     start.style.display = "none";
     startButton1.style.display = "none";
@@ -96,6 +99,12 @@ function intro () {
 
 function clickStartGame () {
 
+    sign.removeEventListener("animationend", ()=>{startButton2.style.display = "block"; startButton2.classList.add("pulse");});
+
+    startButton2.addEventListener("click", clickStartGame);
+
+    startButton2.removeEventListener("click", clickStartGame);
+
     introductionBackground.classList.remove("fadein");
     sign.classList.remove("fall_in");
     startButton2.classList.remove("pulse");
@@ -108,6 +117,8 @@ function clickStartGame () {
 }
 
 function almostStartGame () {
+
+    introduction.removeEventListener("animationend", almostStartGame);
 
     introduction.style.display = "none";
     startButton2.style.display = "none";
@@ -341,6 +352,17 @@ function levelComplete (){
 
 function restartToStartScreen () {
 
+
+    dog_1.removeEventListener("click", clickDog);
+    dog_2.removeEventListener("click", clickDog);
+    dog_3.removeEventListener("click", clickDog);
+
+    dog_4.removeEventListener("click", clickBonusDog);
+
+    cat_1.removeEventListener("click", clickCat);
+    cat_2.removeEventListener("click", clickCat);
+    cat_3.removeEventListener("click", clickCat);
+
     gameOverScreen.style.display ="none";
     gameOverMenu.style.display ="none";
     gameOverRestart.style.display ="none";
@@ -377,7 +399,7 @@ function restartToStartScreen () {
     startScreen ();
 }
 
-function restartToStartScreen () {
+function restartToIntro () {
 
 }
 
