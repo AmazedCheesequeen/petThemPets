@@ -42,15 +42,56 @@ body {
     position: absolute;
 }
 
+/*----------------POSITIONS*/
+
+/*--RIGHT SIDE*/
+
+.position_1{
+
+    bottom: 5vw;
+    right: -30vw;
+}
+
+.position_2{
+
+    bottom: 2vw;
+    right: -25vw;
+}
+
+.position_3{
+
+    bottom: 22vw;
+    right:-10vw;
+}
+
+
+/*--LEFT SIDE*/
+
+.position_4{
+
+    bottom: 7vw;
+    left: -34vw;
+}
+
+.position_5{
+
+    bottom: 14vw;
+    left: -25vw;
+}
+
+.position_6{
+
+    bottom: 20vw;
+    left: -15vw;
+}
+
+
 /*------DOGGOS*/
 
 /*-GOLDENPUPPER*/
 
 #goldenpupper_container{
     position: absolute;
-    bottom: 5vw;
-    right: 4vw;
-
 }
 
 
@@ -66,10 +107,8 @@ body {
 
 #sausagepup_container{
     position: absolute;
-    bottom: 20vw;
-    right: 100vw;
 
-    transform: scaleX(-1);
+
 }
 
 #sausagepup_sprite{
@@ -83,8 +122,6 @@ body {
 
 #corgo_container{
     position: absolute;
-    bottom: 15vw;
-    right: 30vw;
 }
 
 #corgo_sprite{
@@ -98,11 +135,10 @@ body {
 
 #bonusboi_container{
     position: absolute;
-    bottom: -2vw;
+    bottom: -25vw;
     right: 35vw;
 
     overflow: hidden;
-     z-index: 1;
 
     display: none;
 }
@@ -121,8 +157,6 @@ body {
 /*-CHUNKBOI 1*/
 #chunkboi_1_container{
     position: absolute;
-    bottom: 15vw;
-    right: 45vw;
     background-size: 100%;
 }
 
@@ -136,8 +170,6 @@ body {
 /*-CHUNKBOI 2*/
 #chunkboi_2_container{
     position: absolute;
-    bottom: 2vw;
-    left: 34vw;
     background-size: 100%;
 }
 
@@ -153,8 +185,6 @@ body {
 #chonker_container{
 
     position: absolute;
-    bottom: 10vw;
-    left: 13vw;
     background-size: 100%;
 }
 
@@ -236,7 +266,7 @@ body {
 
 /*--ENERGY BOARD*/
 
-#life_bar_1{
+#life_bar_3{
     background-image: url(assets_life_bar_1.svg);/*--size 600x100*/
     width: 25vw;
     height: 4.17vw;
@@ -262,7 +292,7 @@ body {
 
 }
 
-#life_bar_3{
+#life_bar_1{
     background-image: url(assets_life_bar_3.svg);/*--size 200x100*/
     width: 8.34vw;
     height: 4.17vw;
@@ -277,7 +307,7 @@ body {
 
 
 
-#alice_health_1{
+#alice_health_3{
 
     background-image: url(assets_health_1.svg);/*--size 230x230*/
     width: 7vw;
@@ -302,12 +332,12 @@ body {
     top: 0.4vw;
     left: 42vw;
 
-    display: none;
+
 
 
 }
 
-#alice_health_3{
+#alice_health_1{
 
     background-image: url(assets_health_3.svg);/*--size 230x230*/
     width: 7vw;
@@ -318,7 +348,7 @@ body {
     top: 0.4vw;
     left: 42vw;
 
-   display: none;
+
 }
 
 /*--TIME BOARD*/
@@ -446,6 +476,8 @@ body {
     left: 55vw;
 
     transform: rotate(15deg);
+
+    z-index: 1;
 
     display: none;
 
@@ -655,19 +687,19 @@ body {
 
 
 /*ANIMATIONS-------------------------------------------*/
-.run1{
+.runToLeft{
 
-    animation-name: run1_kf;
-    animation-duration: 11s;
+    animation-name: runtf_kf;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 
 
 }
 
-@keyframes run1_kf{
+@keyframes runtf_kf{
 
-    0%{
+   /* 0%{
 
         transform: translateX(75vw) scaleX(1);
         overflow: hidden;
@@ -691,21 +723,25 @@ body {
         transform: translateX(75vw) scaleX(-1);
         overflow: hidden;
 
-    }
+    } */
+
+    from{transform:translateX(0vw);}
+    to{transform: translateX(-150vw);}
 }
 
-.run2{
+.runToRight{
 
-    animation-name: run2_kf;
-    animation-duration: 10s;
+    animation-name: runtr_kf;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 
 
 }
 
-@keyframes run2_kf{
+@keyframes runtr_kf{
 
+    /*
     0%{
 
         transform: translateX(100vw) scaleX(1);
@@ -730,7 +766,14 @@ body {
         transform: translateX(100vw) scaleX(-1);
         overflow: hidden;
 
-    }
+    } */
+
+    from{transform:translateX(0vw) scaleX(-1);}
+    to{transform: translateX(150vw) scaleX(-1);}
+}
+
+.freeze {
+    animation-play-state: paused;
 }
 
 
@@ -883,14 +926,14 @@ body {
     animation-name: startjump_kf;
     animation-duration: 0.7s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
     animation-direction: alternate-reverse;
 }
 
 @keyframes startjump_kf{
 
-    from{transform: translateY(0vw);}
-    to{transform: translateY(-0.6vw)}
+    from{transform: translateY(0vw) rotate(-2deg);}
+    to{transform: translateY(-0.6vw) rotate(4deg);}
 }
 
 .pulse{
@@ -952,7 +995,7 @@ body {
 
 @keyframes fadein_kf{
     from{opacity: 0;}
-    to{opacity: 1}
+    to{opacity: 0.7}
 }
 
 
@@ -969,6 +1012,34 @@ body {
     to{transform: translateY(0vw);}
 }
 
+.bonusboi {
+    animation-name: bonusboi_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
 
+}
 
+@keyframes bonusboi_kf {
+
+    0%{transform: translateY(20vw);}
+
+    50%{transform: translateY(-20vw);}
+
+    100%{transform: translateY(20vw);}
+}
+
+.game_over_pulse{
+    animation-name: gopulse_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes gopulse_kf{
+
+    from{transform: scale(1) rotate(15deg);}
+    to{transform: scale(1.05) rotate(15deg);}
 
