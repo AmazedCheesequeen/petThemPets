@@ -366,15 +366,19 @@ function restartToStartScreen () {
     gameOverAlice.classList.remove("pulse");
 
     for(let i=1; i<4; i++){
-        document.querySelector("life_bar_"+i).classList.remove("life_down");
-        document.querySelector("life_bar_"+i).classList.remove("life_up");
-        document.querySelector("alice_health_"+i).classList.remove("spin_out");
-        document.querySelector("alice_health_"+i).classList.remove("spin_in");
+        document.querySelector("#life_bar_"+i).classList.remove("life_down");
+        document.querySelector("#life_bar_"+i).classList.remove("life_up");
+        document.querySelector("#alice_health_"+i).classList.remove("spin_out");
+        document.querySelector("#alice_health_"+i).classList.remove("spin_in");
     }
 
 
 
     startScreen ();
+}
+
+function restartToStartScreen () {
+
 }
 
 function removeClassFromAllGameElements (classToRemove) {
